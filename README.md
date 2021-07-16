@@ -1,4 +1,4 @@
 # Web Form
 
-To open the web page run the following command in terminal: 
-    open ./pages/index.html
+Paste the following url in browser address bar: 
+    http://127.0.0.1:5500/pages/index.html
