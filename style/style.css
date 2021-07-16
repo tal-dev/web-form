@@ -1,7 +1,8 @@
-form, .main {
+form,
+main {
 	width: 500px;
 	height: 600px;
-    box-shadow: 0 0 10px 4px lightgray;
+	box-shadow: 0 0 10px 4px lightgray;
 	position: absolute;
 	left: 50%;
 	top: 50%;
@@ -10,7 +11,7 @@ form, .main {
 	justify-content: center;
 	flex-direction: column;
 	align-items: center;
-	font-family:Verdana, Geneva, Tahoma, sans-serif;
+	font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
 .form-title {
@@ -20,22 +21,22 @@ form, .main {
 	font-weight: 700;
 }
 
-input, select {
+input,
+select {
 	width: 300px;
 	height: 40px;
 	display: block;
 	margin: 7px;
 	outline: none;
 	background-color: #F4F4F4;
+	border: none;
 }
 
 input {
-	border: none;
 	text-indent: 10px;
 }
 
 select {
-	border: none;
 	color: gray;
 	text-indent: 6px;
 }
@@ -57,4 +58,42 @@ select {
 
 .user-details div {
 	margin: 10px;
+}
+
+@media only screen and (min-device-width : 320px) and (max-device-width : 480px) {
+
+	/* STYLES GO HERE */
+	input,
+	select {
+		width: 800px;
+		height: 1200px;
+		font-size: 40px;
+	}
+
+	form,
+	main {
+		width: 90%;
+		padding: 20px;
+		box-shadow: none;
+		justify-content:
+	}
+
+	.form-title {
+		color: #2D2E2D;
+		font-size: 50px;
+		margin-bottom: 20px;
+		font-weight: 700;
+	}
+
+	#submit-btn {
+		margin-top: 20px;
+		background-color: #2D2E2D;
+		width: 350px;
+		height: 500px;
+		cursor: pointer;
+		border-radius: 10px;
+		font-size: 50px;
+		padding: 10px;
+	}
+
 }

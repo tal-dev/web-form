@@ -1,5 +1,7 @@
+// Contains data (a list of states and cities)
 var data
 
+// Gets data from JSON file
 function loadJSON(callback) {
     var xobj = new XMLHttpRequest();
     xobj.overrideMimeType("application/json");
@@ -12,10 +14,12 @@ function loadJSON(callback) {
     xobj.send(null);
 }
 
+// Saves the data to "data" variable
 loadJSON(function (json) {
     data = json
 });
 
+// Autofill cities based on the selected state
 $("#inputState").change(function () {
     var StateSelected = $(this).val();
     var optionsList;
@@ -176,10 +180,8 @@ $("#inputState").change(function () {
             optionsList = ["Select City"]
     }
 
-
     for (var i = 0; i < optionsList.length; i++) {
         htmlString = htmlString + "<option value='" + optionsList[i] + "'>" + optionsList[i] + "</option>";
     }
     $("#inputCity").html(htmlString);
-
 });

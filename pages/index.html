@@ -2,14 +2,16 @@
 <html>
 
 <head>
-    <meta charset="utf-8" />
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Web Form</title>
     <link rel="stylesheet" href="../style/style.css">
 </head>
 
 <body>
     <form action="./welcomePage.html" method="GET">
-        <div class="form-title">Get in Touch​</div>
+        <h1 class="form-title">Get in Touch​</h1>
         <input type="text" id="name" name="name" placeholder="Your Name" required oninput="checkName()">
         <input type="email" id="email" name="email" placeholder="Email" required oninput="checkEmail()">
         <input type="text" id="address" name="address" placeholder="Address" required>
@@ -80,7 +82,6 @@
         <button id="submit-btn" type="submit">Submit</button>
     </form>
 
-
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
         integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous">
     </script>
@@ -100,7 +101,6 @@
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"
         integrity="sha384-smHYKdLADwkXOn1EmN1qk/HfnUcbVRZyYmZ4qpPea6sjB/pTJ0euyQp0Mk8ck+5T" crossorigin="anonymous">
     </script>
-
     <script src="../scripts/script.js"></script>
     <script src="../scripts/validation.js"></script>
 </body>
